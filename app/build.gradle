@@ -25,6 +25,9 @@ dependencies {
     // This dependency is used by the application.
     implementation libs.guava
 
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.0'
+
+
     
     // Hibernate ORM con Jakarta Persistence
     implementation 'org.hibernate.orm:hibernate-core:6.6.9.Final'
