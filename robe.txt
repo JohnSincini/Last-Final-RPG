@@ -1,0 +1,63 @@
+Potenza
+Velocita
+Resistenza
+Elusione
+
+tipo:
+acciaio
+fuoco
+ombra
+fulmine
+
+arma - potenza + tipo
+armatura - resistenza + velocita
+accessorio - potenza + velocita + resistenza + elusione
+
+lv up -> ti servono px pari al livello corrente
+ottiene exp pari al lv del mostro che uccidi
+
+guerriero
+5
+1
+4
+2
+armatura di ferro res +2
+spada di ferro pot +3 acciaio
+elmo sfavillante pot +1
+
+mago
+3
+3
+1
+3
+veste del mago vel 2
+bastone dei fulmini - pot +2 fulmine
+cappello da mago - elusione +1
+
+ladro
+2
+4
+2
+4
+vecchi stracci - vel +1
+pugnale affilato - acciaio pot +2
+maschera da criminale elu +3
+
+
+each mostro
+lv
+pot
+vel
+res
+elu
+vul
+res
+possibili drop
+
+ran = numero casuale da 1 a 100
+attk: vel*ran > vel_avv*ran? vita -= pot
+vita = resistenza * 10
+fuga: elu*ran > vel_avv*ran? scappato : rimani lì
+attacca prima chi ha più vel, altrimenti è casuale.
+vita < 50% ? crisi! 50% di possibilità ogni turno di provare a fuggire
+
